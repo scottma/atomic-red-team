@@ -20,7 +20,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-     C:\Windows\Temp\msxsl.exe #{xmlfile} #{xslfile}
+     .\msxsl.exe #{xmlfile} #{xslfile}
 
 - name: MSXSL Bypass using remote files
   description: |
@@ -39,7 +39,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-     C:\Windows\Temp\msxsl.exe #{xmlfile} #{xslfile}
+     .\msxsl.exe #{xmlfile} #{xslfile}
 
 - name: WMIC bypass using local XSL file
   description: |

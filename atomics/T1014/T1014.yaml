@@ -61,4 +61,4 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      puppetstrings #{driver_path}
+      .\puppetstrings #{driver_path}

@@ -19,9 +19,13 @@ atomic_tests:
     name: powershell
     command: |
       Invoke-WebRequest #{domain} -UserAgent "HttpBrowser/1.0" | out-null
+      
       Invoke-WebRequest #{domain} -UserAgent "Wget/1.9+cvs-stable (Red Hat modified)" | out-null
+      
       Invoke-WebRequest #{domain} -UserAgent "Opera/8.81 (Windows NT 6.0; U; en)" | out-null
+      
       Invoke-WebRequest #{domain} -UserAgent "*<|>*" | out-null
+      
 
 - name: Malicious User Agents - Nix
   description: |

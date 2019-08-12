@@ -49,7 +49,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      c:\Program Files\Wireshark\tshark.exe -i #{interface} -c 5
+      C:\Progra~1\Wireshark\tshark.exe -i #{interface} -c 5
       c:\windump.exe
 
 - name: Packet Capture PowerShell
@@ -66,5 +66,5 @@ atomic_tests:
   executor:
     name: powershell
     command: |
-      c:\Program Files\Wireshark\tshark.exe -i #{interface} -c 5
+      C:\Progra~1\Wireshark\tshark.exe -i #{interface} -c 5
       c:\windump.exe

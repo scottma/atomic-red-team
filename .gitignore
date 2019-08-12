@@ -6,3 +6,9 @@ atomic-red-team/enterprise-attack.json
 
 docs/.sass-cache/
 docs/_site/
+
+\.circleci/config\.yml
+
+\.github/issue_template\.md
+
+\.github/pull_request_template\.md

